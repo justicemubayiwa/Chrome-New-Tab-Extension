@@ -49,7 +49,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
               const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
               document.getElementById("weather").innerHTML = `
                   <img src=${iconUrl} />
-                  <p>${Math.round(data.main.temp)}º</p>
+                  <p class="weather-temp">${Math.round(data.main.temp)}º</p>
                   <p class="weather-city">${data.name}</p>
               `
           })
