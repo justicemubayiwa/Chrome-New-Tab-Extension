@@ -80,3 +80,8 @@ p.weather-temp {
 p#author{
   font-size: 1rem;
 }
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
