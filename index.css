@@ -66,6 +66,7 @@ div#weather {
   justify-content: flex-end ;
   align-self: flex-start;
   padding-right: 10px ;
+  color: ;
 }
 
 div#weather > img {
@@ -78,6 +79,7 @@ p.weather-city {
   margin: 0;
   margin-top: -15px;
   font-size: 1.2rem;
+  color: rgb(130, 129, 190);
 }
 
 p.weather-temp {
@@ -102,7 +104,7 @@ p#author{
  }
 
  .cryptoPrice {
-   color: rgb(114, 113, 149);
+   color: rgb(130, 129, 190);
    font-weight: bold;
    margin-right: 10px;
  }
