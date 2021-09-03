@@ -34,9 +34,9 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
             <span>${data.name}</span>
             `
       document.getElementById("crypto").innerHTML += `
-            <p> Current: $${data.market_data.current_price.usd}</p>
-            <p> High $${data.market_data.high_24h.usd}</p>
-            <p> Low $${data.market_data.low_24h.usd}</p>
+            <p> <span class='cryptoPrice'> Current:</span><span>$</span>${data.market_data.current_price.usd}</p>
+            <p> <span class='cryptoPrice'> High:</span><span>$</span>${data.market_data.high_24h.usd}</p>
+            <p> <span class='cryptoPrice'> Low:</span><span>$</span>${data.market_data.low_24h.usd}</p>
         `  
       const date = new Date()
       console.log(date.toLocaleTimeString("en-us", {timeStyle: "short"})) 
