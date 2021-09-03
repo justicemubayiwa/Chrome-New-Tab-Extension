@@ -1,3 +1,14 @@
+fetch('https://api.kanye.rest')
+    .then(response => response.text())
+    .then(data => {
+      let quote = JSON.stringify(data)
+      document.getElementById('quote').innerHTML = `
+       <p> ${quote} <p>
+      ` 
+    });
+
+    
+
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=gold")
     .then(res => res.json())
     .then(data => {
@@ -27,7 +38,6 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
             <p> $${data.market_data.high_24h.usd}</p>
             <p> $${data.market_data.low_24h.usd}</p>
         `  
-        
       const date = new Date()
       console.log(date.toLocaleTimeString("en-us", {timeStyle: "short"})) 
       
@@ -59,5 +69,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
           
           })
           .catch(err => console.error(err))
+
+    
 
           
