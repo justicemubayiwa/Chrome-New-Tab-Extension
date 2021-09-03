@@ -9,7 +9,7 @@ fetch('https://api.kanye.rest')
 
     
 
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=gold")
+fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=black")
     .then(res => res.json())
     .then(data => {
         document.body.style.backgroundImage = `url(${data.urls.full})`
@@ -34,9 +34,9 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
             <span>${data.name}</span>
             `
       document.getElementById("crypto").innerHTML += `
-            <p> $${data.market_data.current_price.usd}</p>
-            <p> $${data.market_data.high_24h.usd}</p>
-            <p> $${data.market_data.low_24h.usd}</p>
+            <p> Current: $${data.market_data.current_price.usd}</p>
+            <p> High $${data.market_data.high_24h.usd}</p>
+            <p> Low $${data.market_data.low_24h.usd}</p>
         `  
       const date = new Date()
       console.log(date.toLocaleTimeString("en-us", {timeStyle: "short"})) 

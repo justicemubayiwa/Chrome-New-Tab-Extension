@@ -15,7 +15,7 @@ body {
 }
 
 main{
-  padding: 15px;
+  padding: 10px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,17 +34,23 @@ h1.time {
 
 div#crypto {
   font-size: 1.3rem;
-  margin: 0;
+  margin: 10px;
+  background: rgba(233, 215, 215, 0.1);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 div#crypto > p {
-  margin: 0;
+  justify-content: center;
+  display: flex;
 }
 
 div#crypto-top {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-bottom: 5px inset rgba(233, 215, 215, 0.4);;
 }
 
 div#crypto-top > span {
@@ -87,6 +93,7 @@ p#author{
 }
 
 #quote {
-  font-size: 1.5em;
-  background: rgba(200, 54, 54, 0.5);
+  font-size: 1.3em;
+  border-radius: 5px;
+  padding: 5px;
  }
