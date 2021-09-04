@@ -2,12 +2,11 @@
     "manifest_version": 3,
     "name": "Personal Dashboard",
     "version": "1.0.0",
-    "description": "Time and weather chrome tab with Kanye West quote and Ethereum price tracker. ",
+    "description": "Just for practicing async JS",
     "action": {
-        "default_icon": "icon.png"
+        "default_icon": "new-window.png"
     },
     "chrome_url_overrides": {
         "newtab": "index.html"
     }
-    
 }
