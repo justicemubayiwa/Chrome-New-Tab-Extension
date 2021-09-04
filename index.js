@@ -1,19 +1,21 @@
-fetch('https://api.kanye.rest')
+fetch('https://api.kanye.rest/')
     .then(response => response.text())
     .then(data => {
       let quote = JSON.stringify(data)
       document.getElementById('quote').innerHTML = `
-       <p> ${quote} <p>
+       <p>${quote.slice(13,-4)}"<span id='quoteAuth'> - <strong>Kanye West"</strong></span> <p>
       ` 
     });
 
-    
 
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=black")
+fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=stars")
     .then(res => res.json())
     .then(data => {
-        document.body.style.backgroundImage = `url(${data.urls.full})`
-        document.getElementById("author").textContent = `By: ${data.user.name}`
+        let backImg = document.body.style.backgroundImage = `url(${data.urls.full})`
+        document.getElementById("author").innerHTML =`<a href="https://unsplash.com/@${data.user.username}" id='authorLink'>By: <strong>${data.user.name}</strong></a>`
+        let authorLink = data.user.name
+        console.log(data)
+
     })
     .catch(err => {
 
