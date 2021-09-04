@@ -8,7 +8,7 @@ fetch('https://api.kanye.rest/')
     });
 
 
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=stars")
+fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=night")
     .then(res => res.json())
     .then(data => {
         let backImg = document.body.style.backgroundImage = `url(${data.urls.full})`
