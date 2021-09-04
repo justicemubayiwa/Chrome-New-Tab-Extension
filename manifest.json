@@ -1,17 +1,13 @@
 {
-    "icons": { 
-
-        "16": "icon.png"
-        
-      },
     "manifest_version": 3,
     "name": "Personal Dashboard",
     "version": "1.0.0",
-    "description": "Just for practicing async JS",
+    "description": "Time and weather chrome tab with Kanye West quote and Ethereum price tracker. ",
     "action": {
-        "default_icon": "new-window.png"
+        "default_icon": "icon.png"
     },
     "chrome_url_overrides": {
         "newtab": "index.html"
     }
+    
 }
