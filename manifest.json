@@ -7,7 +7,7 @@
     "description": "Set the background on a new tab to random photo!",
     "permissions": ["storage"],
     "chrome_url_overrides": {
-      "newtab": "photo-of-day.html"
+      "newtab": "index.html"
     },
     "manifest_version": 2
   }
